@@ -1,4 +1,132 @@
 ﻿@page "/"
+@layout MainLayout
 
-<h1> Hello World!</h1>
-<br />
+<PageTitle>AERO | Home</PageTitle>
+
+<section class="min-vh-100 d-flex align-items-center text-light overflow-hidden"
+         style="background: radial-gradient(ellipse at 75% 45%, #172b35 0%, #11131c 40%, #090A0F 80%);">
+
+    <div class="container-fluid px-3 px-lg-5 py-5">
+
+        <div class="row align-items-center g-5">
+
+            <!-- HERO CONTENT -->
+            <div class="col-lg-6 py-4">
+
+                <div class="mb-4">
+                    <span class="badge rounded-0 px-3 py-2"
+                          style="background: rgba(0,240,255,0.08);
+                        color: #00F0FF;
+                        border: 1px solid rgba(0,240,255,0.3);">
+                        ● NEXT GENERATION FLIGHT SYSTEMS
+                    </span>
+                </div>
+
+                <h1 class="display-2 fw-bold mb-4"
+                    style="font-family: 'Space Grotesk', sans-serif;
+                    line-height: 1.05;">
+                    BEYOND<br />
+                    THE <span style="color: #00F0FF;">HORIZON.</span>
+                </h1>
+
+                <p class="lead mb-4"
+                   style="color: #94A3B8; max-width: 490px;">
+                    Precision-engineered autonomous drones.
+                    Designed for cinematic creation, enterprise surveying
+                    and missions without limits.
+                </p>
+
+                <!-- CTA BUTTONS -->
+                <div class="d-flex flex-wrap gap-3 mb-5">
+
+                    <a href="/drones"
+                       class="btn btn-lg fw-bold rounded-0 px-4 py-3"
+                       style="background: #00F0FF; color: #090A0F;">
+                        DISCOVER MORE →
+                    </a>
+
+                    <a href="/technology"
+                       class="btn btn-lg rounded-0 px-4 py-3 text-light"
+                       style="background: #12141D;
+                        border: 1px solid rgba(0,240,255,0.4);">
+                        VIEW TECHNOLOGY
+                    </a>
+
+                </div>
+
+                <!-- FLIGHT STATISTICS -->
+                <div class="row g-3 pt-3">
+
+                    <div class="col-4">
+                        <h3 class="fw-bold mb-1">8K</h3>
+                        <small class="text-secondary">
+                            CINEMATIC VIDEO
+                        </small>
+                    </div>
+
+                    <div class="col-4">
+                        <h3 class="fw-bold mb-1">
+                            46<span style="color: #00F0FF;">+</span>
+                        </h3>
+                        <small class="text-secondary">
+                            MIN FLIGHT TIME
+                        </small>
+                    </div>
+
+                    <div class="col-4">
+                        <h3 class="fw-bold mb-1">360°</h3>
+                        <small class="text-secondary">
+                            VISION SYSTEM
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HERO IMAGE -->
+            <div class="col-lg-6">
+
+                <div class="position-relative">
+
+                    <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1200&auto=format&fit=crop&q=85"
+                         alt="Professional autonomous drone"
+                         class="img-fluid w-100 rounded-2"
+                         style="max-height: 580px;
+                    object-fit: cover;
+                    border: 1px solid rgba(0,240,255,0.2);" />
+
+                    <!-- FLIGHT TELEMETRY -->
+                    <div class="position-absolute bottom-0 start-0 m-3 p-3"
+                         style="background: rgba(9,10,15,0.88);
+                        border: 1px solid rgba(0,240,255,0.2);
+                        backdrop-filter: blur(16px);">
+
+                        <div class="small mb-2"
+                             style="color: #00F0FF;
+                            font-family: 'JetBrains Mono', monospace;">
+                            FLIGHT TELEMETRY
+                        </div>
+
+                        <div class="small text-light mb-1">
+                            STATUS:
+                            <span style="color: #38EF7D;">
+                                OPERATIONAL
+                            </span>
+                        </div>
+
+                        <div class="small text-secondary">
+                            GPS: LOCKED · SIGNAL: 100%
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
