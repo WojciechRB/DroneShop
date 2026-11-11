@@ -1,6 +1,18 @@
+using ASPPal.Components;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services
+    .AddRazorComponents()
+    .AddInteractiveServerComponents();
+
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!\n");
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseAntiforgery();
+
+app.MapRazorComponents<App>()
+    .AddInteractiveServerRenderMode();
 
 app.Run();
